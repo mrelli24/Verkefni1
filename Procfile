@@ -1,1 +1,1 @@
-web: python ./forrit.py $PORT
+web: python ./vef1.py $PORT
