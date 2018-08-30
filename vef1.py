@@ -1,4 +1,10 @@
-from bottle import route, run, template
+from sys import argv
+
+import bottle
+from bottle import *
+
+bottle.debug(True)
+
 
 @route("/")
 def index():
@@ -22,7 +28,7 @@ def jobbi():
 def jobbi():
     return "Hér eru myndir"
 
+bottle.run(host="0,0,0,0",port=argv[1])
 
 
-
-run(host='localhost', port=5000)
+#run(host='localhost', port=5000)
